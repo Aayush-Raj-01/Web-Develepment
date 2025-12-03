@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.left {
+    width: 25vw;
+}
+
+.right {
+    width: 75vw;
+    position:relative;
+}
+
+.home {
+    margin-top: 20px;
+}
+
+.home ul li {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.home ul li:first-child {
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.logo {
+    display: flex;
+}
+
+.text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.logo1 {
+    width: 25px;
+    height: 25px;
+    gap: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.library {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+.logo1-text {
+    display: flex;
+}
+
+.logotext {
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.footer a span {
+    color: rgb(70, 67, 67);
+    
+}
+
+.footer {
+    font-size: 15px;
+    display: flex;
+    gap: 13px;
+    bottom: 0;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    padding-right: 10px;
+  
+}
+.footer a {
+    text-decoration: none;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(21, 21, 21,1);
+    align-items: center; /* Add this */
+    height: 70px;
+}
+
+.ar{
+    width: 50px;
+    height: 40px;
+}
+.header *{
+    padding: 4px;
+}
+.br1 {
+    padding: 20px;
+}
+.spotifyplaylist{
+    padding: 16px;
+}
+.cardCotainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.pl-h-text-1{
+    margin-top: 6px;
+}
+.pl-text-1{
+    margin-top: 5px;
+}
+.card{
+    width: 200px;
+    height: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 13px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+    position: relative;
+}
+.img-pl-1{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5),
+                0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.play img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    right: 19px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.card:hover{
+    background-color: rgb(56, 56, 56);
+}
+.signbtn{
+    background-color: rgb(22, 22, 22);
+    color: rgb(158, 158, 158);
+    font-weight: bold;
+    border: none;
+    border-radius: 60px;
+    font-size: 20px;
+    padding: 10px 20px; /* Make padding consistent */
+    transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease; /* Add smooth transition */
+    min-width: 100px; /* Prevent width changes */
+}
+.signbtn:hover{
+    font-size: 23px;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: black;
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 60px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-right: 15px;
+    border: none;
+    transition: transform 0.2s ease; /* Add smooth transition */
+    min-width: 100px;
+}
+.loginbtn:hover{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.playbar{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(6, 62, 6);
+    width: 100%;
+    padding: 12px;
+    margin-left: 0;
+}
+.songbtn img {
+    width: 40px;
+    height: 40px;
+}
+.songbtn{
+    justify-content: center;
+}

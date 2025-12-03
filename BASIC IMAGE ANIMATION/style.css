@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container-img{
+    margin-top: -110px;
+    width: 130vh;
+    height: 30rem;
+    border-radius: 1rem;
+    box-shadow: gray;
+    background-image: url(https://i.pinimg.com/1200x/cc/d2/49/ccd249f15264cad048d46f7883ec35b8.jpg);
+    background-size: cover;
+    animation: gallery 20s linear infinite;
+}
+@keyframes gallery{
+    0%{
+        background-image: url("https://i.pinimg.com/736x/58/68/d2/5868d2e202b6bb6d5dc2e347bf738a8a.jpg");
+    }
+    20%{
+        background-image: url("https://i.pinimg.com/1200x/48/54/58/485458d07ecbb71db0b95ac509c8eac5.jpg");
+    }
+    40%{
+        background-image: url("https://i.pinimg.com/1200x/d1/da/63/d1da635864ae706e228343227a61a28e.jpg");
+    }
+    60%{
+        background-image: url("https://i.pinimg.com/736x/5b/10/9c/5b109c12eff384d888138c1aa35dad8d.jpg");
+    }
+    80%{
+        background-image: url("https://i.pinimg.com/736x/55/80/ca/5580ca78946de8cfed7993af32e5a927.jpg");
+    }
+    100%{
+        background-image: url("https://i.pinimg.com/736x/e1/ca/61/e1ca61a3a5a7af393edf9c4b37a7ec4d.jpg");
+    }
+
+}

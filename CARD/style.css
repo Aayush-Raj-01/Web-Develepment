@@ -1,0 +1,60 @@
+*{
+margin: 0;
+padding: 0;
+align-items: center;    
+}
+body{
+   background-color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* makes the body full height of the viewport */
+
+}
+.card{
+    background-color: white;
+    width: 198px;
+    height: 330px;
+    border-radius: 10px;
+}
+.image{
+    padding: 5px;
+    
+}
+.image img{
+    border-radius: 10px;
+}
+.content p{
+    font-size: 13px;
+}
+.content{
+    padding: 3px 13px;
+}
+.content h1{
+    font-size: 26px;
+     font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+}
+.capsule{
+    padding: 0 5px 0 12px;
+}
+.capsule span{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 6px;
+    font-size: 14px;
+}
+.button{
+    text-align: center;
+    padding: 5px 1px 0 0 ;
+}
+.button button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(35, 71, 71);
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: rgb(172, 5, 255);
+    transform: scale(2);
+}

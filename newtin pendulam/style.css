@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(41, 33, 33);
+}
+.cradle{
+    margin-top: 100px;
+    width: 50rem;
+    height: 50rem;
+    background-color: transparent;
+    border-top: 1rem solid rgb(183, 32, 32);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+div{
+    width: .5rem;
+    height: 20rem;
+    background-color: rgb(183, 32, 32);
+    position: relative;
+}
+.cradle div::before{
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: -2.25rem;
+    width: 5.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(183, 32, 32);
+}
+.cradle div:first-child{
+    animation: lswing 2s linear infinite alternate;
+    transform-origin: top left;
+}
+.cradle div:nth-child(5){
+    animation: rswing 2s linear infinite 1s alternate;
+    transform-origin: top left;
+}
+@keyframes lswing{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 30deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+@keyframes rswing{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: -30deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
